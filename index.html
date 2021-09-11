@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles/css/index.css" />
     <script src="https://use.fontawesome.com/2a7526fdbd.js" defer></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script
+      src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="js/swiper.js" defer></script>
     <script src="js/script.js" type="module" defer></script>
     <title>Eventplace</title>
@@ -69,8 +72,60 @@
                     id="contactOne"
                     type="text"
                     placeholder="Выберите событие"
-                    class="desktop colortext _long circle"
+                    class="input desktop colortext _long circle"
                   />
+                  <ul class="event__type-menu menu">
+                    <li class="event__type-link">
+                      <a href="#">Праздник</a>
+                      <ul class="event__type-submenu">
+                        <li class="event__type-sublink">
+                          <a href="#">День рождения</a>
+                        </li>
+                        <li class="event__type-sublink">
+                          <a href="#">Свадьба</a>
+                        </li>
+                        <li class="event__type-sublink">
+                          <a href="#">Выпускной</a>
+                        </li>
+                        <li class="event__type-sublink">
+                          <a href="#">Корпоратив</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="event__type-link">
+                      <a href="#">Развлекательное</a>
+                      <ul class="event__type-submenu">
+                        <li class="event__type-sublink">
+                          <a href="#">Модный показ</a>
+                        </li>
+                        <li class="event__type-sublink">
+                          <a href="#">Концерт</a>
+                        </li>
+                        <li class="event__type-sublink">
+                          <a href="#">Кулинарный мастер-класс</a>
+                        </li>
+                        <li class="event__type-sublink">
+                          <a href="#">Литературный вечер</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="event__type-link"><a href="#">Съёмки</a></li>
+                    <li class="event__type-link"><a href="#">Деловое</a></li>
+                    <li class="event__type-link">
+                      <a href="#">Другое</a>
+                      <ul class="event__type-submenu">
+                        <li class="event__type-sublink">
+                          <a href="#">Йога</a>
+                        </li>
+                        <li class="event__type-sublink">
+                          <a href="#">Спид-дейтинг</a>
+                        </li>
+                        <li class="event__type-sublink">
+                          <a href="#">Занятия танцами</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
                 <div class="field">
                   <label for="contact"> Начало </label>
@@ -78,7 +133,7 @@
                     id="contactTwo"
                     type="search"
                     placeholder="Когда?"
-                    class="desktop colortext _short"
+                    class="input desktop colortext _short"
                   />
                 </div>
                 <div class="field">
@@ -87,7 +142,7 @@
                     id="contactThree"
                     type="search"
                     placeholder="Когда?"
-                    class="desktop colortext _short"
+                    class="input desktop colortext _short"
                   />
                 </div>
                 <div class="field">
@@ -96,8 +151,58 @@
                     id="contactFour"
                     type="text"
                     placeholder="Кто приедет?"
-                    class="desktop colortext _long"
+                    class="input desktop colortext _long"
                   />
+                  <table id="myTable" class="guest__list menu">
+                    <tr>
+                      <td>
+                        <p class="guest__list-title">Взрослые</p>
+                        <p class="guest__list-text">От 13 лет</p>
+                      </td>
+                      <td>
+                        <button class="button__plus" type="button">
+                          <i class="fa fa-plus"></i></button
+                        ><span class="counter">0</span
+                        ><button class="button__minus" type="button">
+                          <i class="fa fa-minus"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="guest__list-title">Дети</p>
+                        <p class="guest__list-text">От 2 до 12 лет</p>
+                      </td>
+                      <td>
+                        <button class="button__plus" type="button">
+                          <i class="fa fa-plus"></i></button
+                        ><span class="counter">0</span
+                        ><button class="button__minus" type="button">
+                          <i class="fa fa-minus"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="guest__list-title">Младенцы</p>
+                        <p class="guest__list-text">До 2 лет</p>
+                      </td>
+                      <td>
+                        <button class="button__plus" type="button">
+                          <i class="fa fa-plus"></i></button
+                        ><span class="counter">0</span
+                        ><button class="button__minus" type="button">
+                          <i class="fa fa-minus"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <button class="apply" type="button">Применить</button>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
                 <button type="submit" class="search-main__btn btn">
                   <i class="fa fa-search icon-search"></i>
@@ -465,6 +570,8 @@
           </div>
         </div>
       </footer>
+
+      <!------- pop-up-------->
     </div>
   </body>
 </html>

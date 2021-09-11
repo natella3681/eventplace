@@ -31,11 +31,23 @@ body {
   flex-wrap: wrap;
 }
 .swiper-pagination-bullet {
+  background-color: inherit;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin-left: 25px;
+  border: 1px solid #9cd0cd;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
   background-color: #9cd0cd;
   cursor: pointer;
   height: 16px;
   width: 16px;
   margin-left: 25px;
+  border: 1px solid #9cd0cd;
+  opacity: 1;
 }
 
 .fa {
@@ -48,4 +60,36 @@ body {
 .fa-chevron-left {
   background: #f5f5f8;
   color: #aaa;
+}
+
+.button {
+  // .button__plus
+
+  &__plus {
+    background-color: #fcfcfc;
+    border: 1px solid #dddddd;
+    padding: 8px 11px;
+    border-radius: 50%;
+    margin-right: 11px;
+  }
+
+  // .button__minus
+
+  &__minus {
+    background-color: #fcfcfc;
+    border: 1px solid #dddddd;
+    padding: 8px 11px;
+    border-radius: 50%;
+    margin-left: 11px;
+  }
+}
+.fa {
+}
+.fa-plus {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+.fa-minus {
+  font-size: 14px;
+  color: #c4c4c4;
 }
