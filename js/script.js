@@ -48,19 +48,6 @@ function toggleMenu() {
     }
 };
 
-window.addEventListener('click', e => {
-    const target = e.target;
-    console.log(target);
-    if (!target.closest('.menubox') && !target.closest('.burger-menu')) {
-        menuBody.classList.remove('_active');
-        menuBody.classList.add('_hide');
-    } else {
-        menuBody.classList.remove('_hide');
-        menuBody.classList.add('_active');
-    }
-  });
-
-
 
 iconMenu.addEventListener('click', toggleMenu);
 
