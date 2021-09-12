@@ -64,7 +64,7 @@ window.addEventListener('click', e => {
 
 iconMenu.addEventListener('click', toggleMenu);
 
-// search form
+
 const inputElems = document.querySelectorAll('.input');
 const menuElems = document.querySelectorAll('.menu');
 const guestList = document.querySelector('.guest__list');
@@ -105,7 +105,6 @@ window.addEventListener('click', e => {
 
 chooseAmount();
 
-// sublist menu 
 
 const eventLink = document.querySelector('.event__type-menu');
 const subMenuLinks = document.querySelectorAll('.event__type-submenu');
@@ -133,13 +132,6 @@ window.addEventListener('click', e => {
 
 
 
-
-/*eventLink.addEventListener('click', e => {
-    const target = e.target;
-    console.log(target.closest('.event__type-link'));
-    const list = target.closest('.event__type-link').querySelector('.event__type-submenu');
-    list.classList.toggle('_active');
-});*/
 
 
 
